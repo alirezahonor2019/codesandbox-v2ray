@@ -10,9 +10,9 @@ ENV VLESS_WSPATH /vless
 
 
 RUN mkdir /etc/v2ray /usr/local/v2ray
-COPY config.json /etc/v2ray/
-COPY entrypoint.sh /usr/local/v2ray/
-COPY link-vmess.json /etc/v2ray/
+COPY ./config.json /etc/v2ray/
+COPY ./entrypoint.sh /usr/local/v2ray/
+COPY ./link-vmess.json /etc/v2ray/
 
 RUN chmod a+x /usr/local/v2ray/entrypoint.sh
 
